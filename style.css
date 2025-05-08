@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #F0F8FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.content{
+    display: flex;
+    font-family: sans-serif;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+}
+
+#area{
+    width: 156px;
+    margin: 0 auto;
+    font-size: 0;
+    background: #F0F8FF;
+}
+
+.cell{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    display: inline-block;
+    font-size: 26px;
+    border: 1px solid black;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.currentPlayer{
+    background: #F0F8FF;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 8px;
+    width: 110px;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.content{
+    flex-wrap: wrap;
+}
+
+@media (max-width: 426px) {
+    .content{
+        display: grid;
+        grid-template-columns: (1 1fr);
+        gap: 25px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+}
